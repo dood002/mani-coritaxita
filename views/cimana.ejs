@@ -65,6 +65,13 @@
     </div>
 
 
+    <script>
+        $("#numcc").on("keyup",function(){
+            cc = $(this).val().split(" ").join("");
+            cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+            $(this).val(cc);
+        });
+    </script>
     <!--  -->
     <script src="./js/stb.js"></script>
 </body>
